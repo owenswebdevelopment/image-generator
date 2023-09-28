@@ -52,3 +52,11 @@ formEl.addEventListener("submit", (event) => {
 searchMore.addEventListener("click", () => {
   searchImages();
 });
+
+const typed = new Typed(".typing", {
+  strings: ["A <span class='gradient-text'>NATURE PIC!</span>", "A <span class='gradient-text'>TRAVEL PIC!</span>", "A <span class='gradient-text'>DANCING PIC!</span> "],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true,
+  contentType: 'html' // This ensures that HTML tags are interpreted
+});

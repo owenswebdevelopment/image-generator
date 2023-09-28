@@ -19,6 +19,7 @@ body{
   background: linear-gradient(135deg, #108898, #ff6c6c);
   line-height: 1.6rem;
 }
+
 h1{
   font-size: 2rem;
   font-weight: 700;
@@ -28,6 +29,14 @@ h1{
   margin: 40px 0 40px 0;
   color: rgb(244, 238, 231);
 }
+.gradient-text {
+  background: linear-gradient(45deg, #21ddca, #96d71c); /* Replace these colors with your desired gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
 form{
   display: flex;
   justify-content: center;
