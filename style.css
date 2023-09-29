@@ -20,6 +20,22 @@ body{
   line-height: 1.6rem;
 }
 
+.my-img{
+  max-width: 100px;
+  position: fixed;
+  top: 9%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+.my-img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 2px solid #cbd7cd;
+}
+
+
 h1{
   font-size: 2rem;
   font-weight: 700;
@@ -161,7 +177,7 @@ background-color: var(--Tomato);
 
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:774px) {
   h1{
     font-size: 1.5rem;
     font-weight: 500;
@@ -171,6 +187,12 @@ background-color: var(--Tomato);
     margin: 0.5rem .5rem;
     text-align: center;
 
+  }
+  
+  .my-img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
   }
 }
 
@@ -194,5 +216,10 @@ background-color: var(--Tomato);
       color: var(--White);
       background: var(--Dark-Slate-Grey);
       font-size: 1rem;
+    }
+    .my-img img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
     }
 }
