@@ -9,6 +9,7 @@ let inputData = "";
 let page = 1;
 
 async function searchImages() {
+
   inputData = searchInput.value;
   const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`;
 
@@ -19,6 +20,11 @@ async function searchImages() {
 
   if (page === 1) {
     searchResults.innerHTML = "";
+  }
+
+  if (results.length === 0){
+    noResultsFound();
+    return;
   }
 
   results.map((result) => { // Changed .map() to .forEach()
@@ -60,3 +66,8 @@ const typed = new Typed(".typing", {
   loop: true,
   contentType: 'html' // This ensures that HTML tags are interpreted
 });
+
+function noResultsFound() {
+  searchResults.innerHTML = "<p>NO RESULTS FOUND</p>";
+  searchMore.style.display = "none";
+}

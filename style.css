@@ -29,8 +29,8 @@ body{
 }
 
 .my-img img{
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50px;
   border: 2px solid #cbd7cd;
 }
@@ -151,11 +151,11 @@ background-color: var(--Tomato);
 }
 
 .button-class{
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   width: auto;
- margin-bottom: 4rem;
-  
+  text-align: center;
+  margin-bottom: 20px;
 }
 #search-more-button{
   background-color: var(--Dark-Slate-Grey);
@@ -169,7 +169,7 @@ background-color: var(--Tomato);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   display: none;
-  text-align: center;
+ 
 }
 #search-more-button:hover{
   background-color: var(--White);
